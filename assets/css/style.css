@@ -1,7 +1,216 @@
-/* [CORES-PRINCIPAIS] */
-:root { 
+/*   F O N T S   I M P O R T   */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  /*   M A I N   C O L O R S   V A R   */
 --primary-color: #328e6e;
+--medium-green: #67ae6e;
+--light-green: #90c67c;
 --secondary-color: #e1eebc;
 --dark-color: #383838;
 --light-color: #fafaf6;
+--black: #000;
+--white: #fff;
+
+/* REM TRICK: 1REM = 10PX */
+font-size: 62.5%;
+}
+body{ font-size: 1.6rem; }
+
+/*   C S S   R E S E T   */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*   G E N E R A L   S T Y L E S   */
+body {
+  font-family: 'Montserrat Alternates', sans-serif;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.limit-container{
+    max-width: 1440px;
+}
+
+/*   H E A D E R   */
+header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+  height: 100px;
+  position: sticky;
+  top: 0;
+}
+
+/*   N A V I G A T I O N   */
+nav {
+  max-width: 1440px;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px;
+}
+
+nav img {
+  height: 50%;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  color: var(--light-color);
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+nav > ul li a {
+  margin: 0 5rem;
+}
+
+nav ul > li {
+  position: relative;
+}
+
+nav > ul > li:last-of-type {
+  padding: 1rem;
+}
+
+nav ul > li a:hover {
+  opacity: 70%;
+}
+
+nav ul > li > a {
+  outline: none;
+}
+
+nav ul > li > a:focus {
+  outline: 2px dashed #666;
+  outline-offset: 4px;
+}
+
+/*   D R O P D O W N   */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.dropdown > li a {
+  margin: 0;
+}
+
+.dropdown li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.dropdown li a:hover {
+  background: var(--light-green);
+  color: var(--light-color);
+}
+
+nav ul > li:hover > .dropdown,
+nav ul > li:focus-within > .dropdown {
+  display: block;
+}
+
+/*   C A L L   T O   A C T I O N   B U T T O N   */
+.cta-button {
+  padding: 2rem;
+  background-color: var(--light-green);
+  border-radius: 1rem;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/*   M A I N   S E C T I O N   */
+#cursos main{
+    display: flex;
+    justify-content: center;
+}
+
+#cursos main h1,
+#cursos section {
+  padding-top: 30px;
+}
+    #cursos h1{
+        font-weight: bold;
+    }
+        #cursos p{
+            padding-top: 10px;
+            font-weight: 500;
+        }
+
+#cursos main > h1,
+#cursos main > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cursos main a {
+  color: var(--dark-color);
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+}
+
+#cursos main a:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+}
+
+/*   G R I D   L A Y O U T   */
+#cursos section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/*   A R T I C L E   C A R D S   */
+#cursos article {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  border-radius: 20px;
+  gap: 30px;
+}
+
+#cursos article > img {
+  border-radius: 10px;
 }
