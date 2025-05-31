@@ -1,0 +1,56 @@
+/*   M A I N   S E C T I O N   */
+main{
+    display: flex;
+    justify-content: center;
+}
+
+main h1,
+section {
+  padding-top: 30px;
+}
+    h1{
+        font-weight: bold;
+    }
+        p{
+            padding-top: 10px;
+            font-weight: 500;
+        }
+
+main > h1,
+main > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main a {
+  color: var(--dark-color);
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+}
+
+main a:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+}
+
+/*   G R I D   L A Y O U T   */
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/*   A R T I C L E   C A R D S   */
+article {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  border-radius: 20px;
+  gap: 30px;
+}
+
+article > img {
+  border-radius: 10px;
+}
