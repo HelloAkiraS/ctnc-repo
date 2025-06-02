@@ -1,8 +1,7 @@
 /*    */
 main {
-  display: grid;
-  grid-template-rows: 1fr 1fr; 
-  height: 89vh;
+  display: flex;
+  flex-direction: column;
 }
 
 section {
@@ -15,12 +14,7 @@ section .limit-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
-}
-
-figure {
-  padding: 0;
-  margin: 0;
+  gap: 100px;
 }
 
 section:last-of-type .limit-container {

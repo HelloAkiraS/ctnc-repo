@@ -17,7 +17,6 @@ main{
             background-repeat: no-repeat;
         }
         section:nth-of-type(2){
-            height: 60vh;
             background-image: url(/assets/img/bg.svg);
             background-repeat: no-repeat;
         }
@@ -35,26 +34,34 @@ main{
     section:nth-of-type(2) .limit-container{
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        height: 100%;
     }
+        section:nth-of-type(2) img{
+            height: 100%;
+        }
 
 /*   S E C T I O N   3   */
     section:nth-of-type(3) .limit-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        align-items: center;
         gap: 50px;
+        height: 100%;
     }
         article{
             box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
             border-radius: 5px;
             padding: 50px;
+            flex: 1;
 
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
 
-            height: 50vh;
+            height: 100%;
+            max-height: 500px;
         }
             .inner-plan-div{
                 display: flex;
