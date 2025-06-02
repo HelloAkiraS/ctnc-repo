@@ -1,0 +1,34 @@
+
+main{
+    padding: 5%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    min-height: 89vh;
+}
+
+.limit-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.limit-container>a{
+    max-width: 100px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+section:last-of-type{
+    background-color: rgb(215, 239, 250);
+}
