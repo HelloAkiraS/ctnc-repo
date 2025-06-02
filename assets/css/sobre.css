@@ -1,16 +1,29 @@
+/*    */
 main {
-    display: flex;
-    flex-direction: column; 
-    gap: 100px; 
-    align-items: center; 
-    justify-content: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr; 
+  height: 89vh;
 }
 
-.limit-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* - CENTRALIZAR À PAGINA */
-/* - USAR GRID */
+section .limit-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+section:last-of-type .limit-container {
+    flex-direction: row-reverse;
+}
+
