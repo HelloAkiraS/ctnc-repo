@@ -45,6 +45,7 @@ body {
 .limit-container{
     max-width: 1440px;
     width: 100%;
+    margin: 0 50px;
 }
 
 /*   H E A D E R   */
@@ -55,6 +56,7 @@ header {
   height: 100px;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 /*   N A V I G A T I O N   */
@@ -72,6 +74,23 @@ nav {
   nav img {
     height: 100%;
   }
+  nav > ul li a {
+    margin: 0 50px;
+    padding: 10px;
+  }
+    nav ul > li {
+      position: relative;
+    }
+      nav ul > li a:hover {
+        opacity: 70%;
+      }
+  nav ul > li > a {
+    outline: none;
+  }
+    nav ul > li > a:focus {
+      outline: 2px dashed #666;
+      outline-offset: 4px;
+    }
   nav ul {
     display: flex;
     align-items: center;
@@ -84,25 +103,6 @@ nav {
         text-decoration: none;
         transition: 0.3s ease-in-out;
       }
-  nav > ul li a {
-    margin: 0 5rem;
-  }
-    nav ul > li {
-      position: relative;
-    }
-      nav > ul > li:last-of-type {
-        padding: 1rem;
-      }
-        nav ul > li a:hover {
-          opacity: 70%;
-        }
-  nav ul > li > a {
-    outline: none;
-  }
-    nav ul > li > a:focus {
-      outline: 2px dashed #666;
-      outline-offset: 4px;
-    }
 
 /*   D R O P D O W N   */
 .dropdown {
@@ -120,7 +120,7 @@ nav {
   }
   .dropdown li a {
     display: block;
-    padding: 0.75rem 1rem;
+    padding: 8px 10px;
     color: #333;
     text-decoration: none;
     border-radius: 5px;
@@ -137,9 +137,9 @@ nav {
 
   /*   C A L L   T O   A C T I O N   B U T T O N   */
   .cta-button {
-    padding: 2rem;
+    padding: 20px;
     background-color: var(--light-green);
-    border-radius: 1rem;
+    border-radius: 10px;
     font-weight: bold;
     transition: 0.3s ease-in-out;
   }
