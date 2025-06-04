@@ -22,7 +22,3 @@ main{
     text-decoration: none;
     color: var(--light-color);
 }
-
-section:last-of-type{
-    background-color: rgb(215, 239, 250);
-}
