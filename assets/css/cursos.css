@@ -55,7 +55,9 @@ section {
   gap: 30px;
 }
 
-/*   A R T I C L E   C A R D S   */
-article {
-  
+section img {
+  height: 150px;
+  width: 150px;
+  background-color: #9c9c9cbb;
 }
+
