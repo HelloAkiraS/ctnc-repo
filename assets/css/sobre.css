@@ -4,20 +4,20 @@ main {
   flex-direction: column;
 }
 
-section {
+main section {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-section .limit-container {
+main section .limit-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 100px;
 }
 
-section:last-of-type .limit-container {
+main section:last-of-type .limit-container {
     flex-direction: row-reverse;
 }
 
