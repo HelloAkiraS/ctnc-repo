@@ -13,11 +13,11 @@ main{
     }
         main section:nth-of-type(1){
             height: calc(100vh - 100px);
-            background-image: url(assets/img/background-index.svg);
+            background-image: url(../img/background-index.svg);
             background-repeat: no-repeat;
         }
         main section:nth-of-type(2){
-            background-image: url(assets/img/bg.svg);
+            background-image: url(../img/bg.svg);
             background-repeat: no-repeat;
         }
         main section:nth-of-type(3){
