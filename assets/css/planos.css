@@ -40,10 +40,10 @@ main section:nth-of-type(3) {
     background-repeat: no-repeat;
 }
 
-main section{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-size: cover;
-    }
+main section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
