@@ -1,0 +1,49 @@
+main {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main section .limit-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+main .limit-container>img { 
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 10px;
+}
+
+main article p{
+  padding-top: 20px;
+}
+
+
+main article p:last-of-type{
+  padding-bottom: 40px;
+}
+
+main .limit-container a{
+    max-width: 100px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    color: var(--light-color);
+}
