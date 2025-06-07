@@ -7,12 +7,14 @@ main {
 
 main .limit-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 30px;
 }
 
-main .limit-container>a {
-    max-width: 100px;
+main .limit-container a{
+    min-width: 100px;
     padding: 20px;
     background-color: var(--primary-color);
     border-radius: 5px;
@@ -51,4 +53,18 @@ main section {
     justify-content: center;
     align-items: center;
     background-size: cover;
+}
+
+main .limit-container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main ul {
+    list-style: disc;
+}
+
+main li {
+    padding-top: 8px;
 }
