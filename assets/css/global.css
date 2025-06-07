@@ -15,12 +15,13 @@
 /* REM TRICK: 1REM = 10PX */
 font-size: 62.5%;
 }
-body{ font-size: 1.8rem; }
+body{ font-size: 1.6rem; }
 
 /*   C S S   R E S E T   */
 html {
   box-sizing: border-box;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 *, *:before, *:after {
   box-sizing: inherit;
