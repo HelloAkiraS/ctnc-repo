@@ -17,11 +17,10 @@ header nav label{
     z-index: 10;
 }
     header nav label input{
-    appearance: none;
-    padding: 0;
-    margin: 0;
-    outline: none;
-    pointer-events: none;
+        appearance: none;
+        padding: 0;
+        margin: 0;
+        outline: none;
     }
         header nav label::before,
         header nav label::after,
@@ -38,21 +37,26 @@ header nav label{
                         translate var(--animation-time);
         }
             header nav label input:checked{
-            opacity: 0;
-            width: 0;
+                opacity: 0;
+                width: 0;
             }
-        header nav label:has(input:checked)::before{
-            rotate: -45deg;
-            width: var(--h);
-            translate: 0 calc(var(--bar-height) / -2);
-        }
-        header nav label:has(input:checked)::after{
-            rotate: 45deg;
-            width: var(--h);
-            translate: 0 calc(var(--bar-height) / 2);
-        }
-        header nav label:has(input:checked) + aside{
-            translate: 0;
+            header nav label:has(input:checked)::before{
+                rotate: -45deg;
+                width: var(--h);
+                translate: 0 calc(var(--bar-height) / -2);
+            }
+            header nav label:has(input:checked)::after{
+                rotate: 45deg;
+                width: var(--h);
+                translate: 0 calc(var(--bar-height) / 2);
+            }
+            header nav label:has(input:checked) + aside{
+                translate: 0;
+            }
+        header nav label:has(input:focus-visible)::before,
+        header nav label:has(input:focus-visible)::after,
+        header nav label input:focus-visible{
+            border: 2px solid var(--dark-color);
         }
 
 /* aside */
@@ -68,7 +72,7 @@ header nav aside{
     z-index: 5;
     background-color: var(--primary-color);
 
-    display: flex;
+    display: none;
     flex-direction: column;
 
     padding: 100px 30px;
@@ -123,32 +127,6 @@ header nav aside{
   }
 }
 
-@media (max-width: 975px){
-    main section:nth-of-type(1) .limit-container h1,
-    main section:nth-of-type(1) .limit-container p{
-        display: flex;
-        justify-self: center;
-        text-align: center;
-
-        width: 70%;
-    }
-    main section:nth-of-type(2) .limit-container{
-        flex-direction: column;
-        text-align: center;
-        gap: 50px;
-    }
-        main section:nth-of-type(2) .left-inner-div{
-            width: 80%;
-        }
-    main section:nth-of-type(3) .limit-container{
-        flex-direction: column;
-    }
-
-    .footer-content{
-        flex-direction: column;
-    }
-}
-
 @media (max-width: 950px){
   header nav ul li:first-of-type{
     display: none;
@@ -160,5 +138,11 @@ header nav aside{
   }
   header nav label{
     display: flex;
+  }
+  header nav aside{
+    display: flex;
+  }
+  .footer-content{
+    flex-direction: column;
   }
 }
