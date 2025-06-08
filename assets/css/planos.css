@@ -22,30 +22,30 @@ main .limit-container a {
     transition: 0.3s ease-in-out;
     text-decoration: none;
     color: var(--light-color);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 main section:nth-of-type(1) {
-    height: calc(100vh - 100px);
     background-image: url(../img/bg-option-7.svg);
-
     background-repeat: no-repeat;
+    min-height: calc(100vh - 100px);
 }
 
 main section:nth-of-type(2) {
-    height: calc(100vh - 100px);
     background-image: url(../img/bg-option-6.svg);
     background-repeat: no-repeat;
     rotate: calc(180deg);
+    min-height: calc(100vh - 100px);
 }
-
-main section:nth-of-type(2) .limit-container {
-    rotate: calc(180deg);
-}
+    main section:nth-of-type(2) .limit-container {
+        rotate: calc(180deg);
+    }
 
 main section:nth-of-type(3) {
     height: calc(100vh - 100px);
     background-image: url(../img/bg-option-8.svg);
     background-repeat: no-repeat;
+    min-height: calc(100vh - 100px);
 }
 
 

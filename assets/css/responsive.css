@@ -117,12 +117,12 @@ header nav aside{
 @media (max-width: 1080px){
   footer section{
     grid-template-columns: 1fr;
-    grid-template-rows: 50% 50%;
+    gap: 50px;
   }
   footer section > article{
     justify-self: center;
   }
-  footer article{
+  footer article:last-of-type{
     align-items: center;
   }
 }
@@ -143,6 +143,17 @@ header nav aside{
     display: flex;
   }
   .footer-content{
-    flex-direction: column;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
   }
+}
+@media (max-width: 420px){
+    header nav,
+    .limit-container,
+    footer section{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
