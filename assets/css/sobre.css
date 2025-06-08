@@ -30,6 +30,10 @@ main section:last-child {
   background-image: url(../img/bg-option-8.svg);
   background-repeat: no-repeat;
 }
+main section:last-child img {
+  width: 350px;
+  height: 350px;
+}
 
 main section:nth-child(1) {
   height: calc(100vh - 100px);
