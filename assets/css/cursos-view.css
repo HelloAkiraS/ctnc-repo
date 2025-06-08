@@ -21,6 +21,7 @@ main section .limit-container {
   align-items: center;
   justify-content: space-between;
   gap: 100px;
+  min-height: calc(100vh - 100px);
 }
 
 main .limit-container>img { 
@@ -46,4 +47,128 @@ main .limit-container a{
     transition: 0.3s ease-in-out;
     text-decoration: none;
     color: var(--light-color);
+}
+
+/*   Q U E R I E S   */
+@media (max-width: 975px) {
+  main {
+    height: auto;
+  }
+
+  main section {
+    padding: 60px 0;
+  }
+
+  main section .limit-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    min-height: auto;
+    padding-top: 100px;
+  }
+
+  main section h1,
+  main section p {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  main section img {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+/* Até 634px - celulares médios */
+@media (max-width: 634px) {
+  main {
+    height: auto;
+  }
+
+  main section {
+    padding: 40px 0;
+  }
+
+  main .limit-container {
+    flex-direction: column;
+    gap: 20px;
+    min-height: auto;
+    height: auto;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  main section h1,
+  main section p {
+    width: 100%;
+  }
+
+  main .limit-container img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+  }
+}
+
+/* Até 375px - iPhone SE e similares */
+@media (max-width: 375px) {
+  main section .limit-container {
+    padding-top: 80px;
+    gap: 20px;
+  }
+
+  main section h1 {
+    font-size: 1.2rem;
+    width: 95%;
+  }
+
+  main section p {
+    font-size: 0.95rem;
+    width: 90%;
+    line-height: 1.4;
+  }
+
+  main section img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+  }
+
+  header nav img {
+    max-width: 120px;
+  }
+
+  .cta-button {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
+
+  @media (max-width: 375px) {
+  /* Ajusta o botão “Contatar” dentro da limit-container */
+  main .limit-container a {
+    font-size: 0.85rem;
+    padding: 10px 14px;
+    max-width: 90px;
+    margin-bottom: 16px;    /* <-- espaçamento para baixo */
+  }
+
+  /* Ou, alternativamente, coloque margem na imagem */
+  main .limit-container img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    margin-top: 16px; 
+  }
+}
 }
