@@ -47,9 +47,6 @@ main .limit-container {
     main .limit-container p{
         text-align: center;
     }
-    main section ul{
-        width: 80%;
-    }
         main li {
             padding-top: 8px;
         }
