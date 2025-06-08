@@ -49,9 +49,6 @@ main .limit-container {
     main .limit-container p{
         text-align: center;
     }
-    main section ul{
-        width: 80%;
-    }
         main li {
             padding-top: 8px;
         }
@@ -61,10 +58,18 @@ main .limit-container {
     table {
         width: 100%;
         border-collapse: collapse;
-        font-family: Arial, sans-serif;
     }
         thead tr {
             text-align: left;
+        }
+            tr td:first-of-type{
+                font-weight: bold;
+            }
+        th:first-of-type{
+            border-radius: 10px 0 0 0;
+        }
+        th:last-of-type{
+            border-radius: 0 10px 0 0;
         }
         th,
         td {
@@ -81,6 +86,7 @@ main .limit-container {
                 border-radius: 5px;
                 color: #FFF;
                 text-decoration: none;
+                font-weight: 500;
             }
         th {
             background-color: var(--primary-color);
