@@ -9,6 +9,7 @@ main section .limit-container {
   align-items: center;
   justify-content: space-between;
   gap: 100px;
+  min-height: calc(100vh - 100px);
 }
 
 main section:last-of-type .limit-container {
@@ -45,9 +46,23 @@ main section {
 }
 
 main section:nth-of-type(1) {
-    transform: rotate(180deg); 
+  transform: rotate(180deg);
 }
 
-main section:nth-of-type(1) .limit-container {  
-    transform: rotate(180deg);
-}  
+main section:nth-of-type(1) .limit-container {
+  transform: rotate(180deg);
+}
+
+/*   Q U E R I E S   */
+@media (max-width: 975px) {
+  main {
+    height: auto;
+  }
+  main section .limit-container, main section:last-of-type .limit-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+  }
+}
