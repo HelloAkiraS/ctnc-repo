@@ -205,7 +205,7 @@ footer{
         footer nav ul img:hover,
         footer nav ul li a:hover{
             transform: scale(1.1);
-          }
+        }
     footer article > ul{
       display: flex;
       flex-direction: column;
