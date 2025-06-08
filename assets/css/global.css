@@ -112,48 +112,48 @@ header nav {
         transition: 0.3s ease-in-out;
       }
 
-/*   D R O P D O W N   */
-.dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #fff;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 5px;
-  z-index: 10;
-}
-  .dropdown > li a {
-    margin: 0;
-  }
-  .dropdown li a {
-    display: block;
-    padding: 8px 10px;
-    color: #333;
-    text-decoration: none;
+  /*   D R O P D O W N   */
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 5px;
-    transition: 0.3s ease-in-out;
+    z-index: 10;
   }
-    .dropdown li a:hover {
-      background: var(--light-green);
-      color: var(--light-color);
+    .dropdown > li a {
+      margin: 0;
     }
-    nav ul > li:hover > .dropdown,
-    nav ul > li:focus-within > .dropdown {
+    .dropdown li a {
       display: block;
+      padding: 8px 10px;
+      color: #333;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s ease-in-out;
     }
+      .dropdown li a:hover {
+        background: var(--light-green);
+        color: var(--light-color);
+      }
+      nav ul > li:hover > .dropdown,
+      nav ul > li:focus-within > .dropdown {
+        display: block;
+      }
 
-  /*   C A L L   T O   A C T I O N   B U T T O N   */
-  .cta-button {
-    padding: 20px;
-    background-color: var(--light-green);
-    border-radius: 10px;
-    font-weight: bold;
-    transition: 0.3s ease-in-out;
-  }
-    .cta-button:hover {
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /*   C A L L   T O   A C T I O N   B U T T O N   */
+    .cta-button {
+      padding: 20px;
+      background-color: var(--light-green);
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s ease-in-out;
     }
+      .cta-button:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
 
 /*   F O O T E R   */
 footer{
@@ -171,7 +171,6 @@ footer{
   }
   .footer-content{
     display: flex;
-    flex: 0;
     justify-content: space-between;
   }
   footer article{
@@ -182,6 +181,9 @@ footer{
     footer article p{
       font-size: small;
       margin-top: 10px;
+    }
+    footer section > article{
+      max-width: 300px;
     }
     footer section > article p{
       width: 100%;
@@ -232,4 +234,5 @@ footer{
 }
   .copyright p{
     font-weight: 500;
+    width: 100%;
   }
