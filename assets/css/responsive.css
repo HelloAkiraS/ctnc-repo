@@ -162,6 +162,24 @@ header nav aside{
         width: 100%;
         align-items: center;
     }
+    header nav img{
+        width: 90%;
+    }
+
+    table tr td a::after{
+        font-size: 3rem;
+        content: "\f232";
+        font-family: 'Font Awesome 6 Brands';
+        font-weight: 600;
+        color: var(--primary-color);
+    }
+    td{
+        padding: 10px;
+    }
+    table tr td a{
+        background-color: transparent;
+        position: relative;
+    }
 
     header nav,
     .limit-container,

@@ -92,3 +92,6 @@ main .limit-container {
             background-color: var(--primary-color);
             color: #FFF;
         }
+        table tr td a::after{
+            content: "Reservar";
+        }
